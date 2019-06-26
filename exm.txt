@@ -13,7 +13,7 @@ stage('Display all the logins') {
 steps {
 ps'''
 cd C:/Users/nkambala/Desktop/TFA
-.\logins.ps1'''
+./logins.ps1'''
 }
 }
 stage('Deploy') {
