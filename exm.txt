@@ -4,7 +4,7 @@ agent {label 'master'}
 stages {
 stage('connecting to server') {
 steps {
-PowerShell("C:/Users/nkambala/Desktop/TFA'.\\final.ps1")
+powershell ".\final.ps1"
 }
 }
 stage('Display all the logins') {
