@@ -5,14 +5,14 @@ stages {
 stage('connecting to server') {
 steps {
 ps'''
-cd C:\Users\nkambala\Desktop\TFA
-.\connect1.ps1'''
+cd C:/Users/nkambala/Desktop/TFA
+./connect1.ps1'''
 }
 }
 stage('Display all the logins') {
 steps {
 ps'''
-cd C:\Users\nkambala\Desktop\TFA
+cd C:/Users/nkambala/Desktop/TFA
 .\logins.ps1'''
 }
 }
