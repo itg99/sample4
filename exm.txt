@@ -4,7 +4,12 @@ agent {label 'master'}
 stages {
 stage('connecting to server') {
 steps {
-powershell ".\final.ps1"
+powershell '''
+    while (1) {
+        write-host "Testing"
+        Start-Sleep 1
+    }
+    '''
 }
 }
 stage('Display all the logins') {
