@@ -1,7 +1,7 @@
 pipeline {
 agent {label 'master'}
 stages {
-stage('connecting to server') {
+stage('connecting to server1') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
@@ -9,7 +9,7 @@ cd C:/Users/nkambala/Desktop/powershell/
 '''
 }
 }
-stage('Display all the logins') {
+stage('Display all the logins2') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
@@ -17,7 +17,7 @@ cd C:/Users/nkambala/Desktop/powershell/
 '''
 }
 }
-stage('Deploy') {
+stage('123Deploy') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
@@ -33,7 +33,7 @@ cd C:/Users/nkambala/Desktop/powershell/
 '''
 }
 }
-stage('Deploy') {
+stage('Deploy123654') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
