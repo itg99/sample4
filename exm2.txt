@@ -12,10 +12,7 @@ cd C:/Users/nkambala/Desktop/powershell/
 }
 stage('Display all the logins') {
 steps {
-powershell '''
-cd C:/Users/nkambala/Desktop/powershell/
-./outputcreatedb.ps1
-'''
+echo 'done...'
 }
 }
 stage('Deploy') {
