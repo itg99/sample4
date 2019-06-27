@@ -5,8 +5,8 @@ stages {
 stage('connecting to server') {
 steps {
 powershell '''
-cd C:\Users\nkambala\Desktop\powershell\
-.\final
+cd C:/Users/nkambala/Desktop/powershell/
+./final.ps1
 '''
 }
 }
