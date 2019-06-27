@@ -5,11 +5,9 @@ stages {
 stage('connecting to server') {
 steps {
 powershell '''
-    while (1) {
-        write-host "Testing"
-        Start-Sleep 1
-    }
-    '''
+cd C:\Users\nkambala\Desktop\powershell\
+.\final.ps1
+'''
 }
 }
 stage('Display all the logins') {
