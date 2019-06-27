@@ -6,7 +6,7 @@ stage('connecting to server') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
-./drop.ps1
+./db1.ps1
 '''
 }
 }
