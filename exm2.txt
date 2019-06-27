@@ -17,29 +17,7 @@ cd C:/Users/nkambala/Desktop/powershell/
 '''
 }
 }
-stage('123Deploy') {
-steps {
-powershell '''
-cd C:/Users/nkambala/Desktop/powershell/
-./dbnames.ps1
-'''
 }
 }
-stage('Deploy') {
-steps {
-powershell '''
-cd C:/Users/nkambala/Desktop/powershell/
-./drop.ps1
-'''
-}
-}
-stage('Deploy123654') {
-steps {
-powershell '''
-cd C:/Users/nkambala/Desktop/powershell/
-./dbnames.ps1
-'''
-} 
-}
-}
-}
+
+
