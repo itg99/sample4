@@ -5,13 +5,16 @@ stage('connecting to server') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
-./drop.ps1
+./db1.ps1
 '''
 }
 }
 stage('Display all the logins') {
 steps {
-echo 'done...'
+powershell '''
+cd C:/Users/nkambala/Desktop/powershell/
+./dbnames.ps1
+'''
 }
 }
 stage('Deploy') {
