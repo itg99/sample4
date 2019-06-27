@@ -1,0 +1,23 @@
+pipeline {
+agent {label 'master'}
+stages {
+stage('connecting to server1') {
+steps {
+powershell '''
+cd C:/Users/nkambala/Desktop/powershell/
+./DB2.ps1
+'''
+}
+}
+stage('Display all the logins2') {
+steps {
+powershell '''
+cd C:/Users/nkambala/Desktop/powershell/
+./dbnames.ps1
+'''
+}
+}
+}
+}
+
+
