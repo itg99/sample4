@@ -6,7 +6,7 @@ stage('connecting to server') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
-./connect1.ps1
+./createdb.ps1
 '''
 }
 }
@@ -14,7 +14,7 @@ stage('Display all the logins') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
-./logins.ps1
+./outputcreatedb.ps1
 '''
 }
 }
