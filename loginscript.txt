@@ -1,0 +1,30 @@
+pipeline {
+agent {label 'master'}
+
+stages {
+stage('login creation') {
+steps {
+powershell '''
+cd C:/Users/nkambala/Desktop/powershell/
+./logincreation.ps1
+'''
+}
+}
+stage('checking') {
+steps {
+powershell '''
+cd C:/Users/nkambala/Desktop/powershell/
+./final.ps1
+'''
+}
+}
+stage('Deploy') {
+steps {
+echo 'Deploying....'
+}
+}
+}
+} 
+
+
+
