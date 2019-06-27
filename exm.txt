@@ -2,7 +2,7 @@ pipeline {
 agent {label 'master'}
 
 stages {
-stage('connecting to server') {
+stage('connecting to server and display logins') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
@@ -10,9 +10,12 @@ cd C:/Users/nkambala/Desktop/powershell/
 '''
 }
 }
-stage('Display all the logins') {
+stage('Display all the databases') {
 steps {
-echo 'Deploying....'
+powershell '''
+cd C:/Users/nkambala/Desktop/powershell/
+./dbnames.ps1
+'''
 }
 }
 stage('Deploy') {
