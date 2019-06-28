@@ -5,7 +5,7 @@ stage('connecting to server1') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
-./dbnames.ps1
+./backup.ps1
 '''
 }
 }
@@ -13,7 +13,7 @@ stage('Display all the logins2') {
 steps {
 powershell '''
 cd C:/Users/nkambala/Desktop/powershell/
-./db1.ps1
+./final.ps1
 '''
 }
 }
